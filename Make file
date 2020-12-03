@@ -1,0 +1,5 @@
+all: LinkStacktest
+LinkStacktest: LinkStack.c  LinkStacktest.c
+        gcc LinkStack.c LinkStacktest.c -o LinkStacktest
+clean:
+        rm LinkStacktest

@@ -1,5 +1,10 @@
-all: LinkStacktest
+all: LinkStacktest testqueue
 LinkStacktest: LinkStack.c  LinkStacktest.c
         gcc LinkStack.c LinkStacktest.c -o LinkStacktest
+testqueue:queue.c testqueue.c
+        gcc queue.c testqueue.c -o testqueue.c
+
+
 clean:
         rm LinkStacktest
+        rm testqueue
